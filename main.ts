@@ -65,7 +65,7 @@ enum GroveGesture {
  * Functions to operate Grove module.
  */
 //% weight=10 color=#9F79EE icon="\uf108" block="Grove"
-namespace grove {
+namespace profdetech_grove {
     const gestureEventId = 3100;
     let lastGesture = GroveGesture.None;
     let paj7620: PAJ7620 = undefined;
