@@ -75,7 +75,7 @@ namespace grove {
      * @param gesture type of gesture to detect
      * @param handler code to run
      */
-    //% blockId=grove_gesture_create_event block="on Gesture|%gesture"
+    //% blockId=grove_gesture_create_event block="Lorsque le geste|%gesture est effectué"
     export function onGesture(gesture: GroveGesture, handler: () => void) {
         control.onEvent(gestureEventId, gesture, handler);
         if (!paj7620) {
