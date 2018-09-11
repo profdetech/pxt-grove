@@ -97,7 +97,7 @@ namespace grove {
      * Create a new driver of Grove - Ultrasonic Sensor to measure distances in cm
      * @param pin signal pin of ultrasonic ranger module
      */
-    //% blockId=grove_ultrasonic_centimeters block="Ultrasonic Sensor (in cm) at|%pin"
+    //% blockId=grove_ultrasonic_centimeters block="Valeur en centimetre du capteur ultrason sur le port|%pin"
     export function measureInCentimeters(pin: DigitalPin): number
     {
         let duration = 0;
