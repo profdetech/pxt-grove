@@ -39,26 +39,26 @@ let TubeTab: number [] = [
  * Grove Gestures
  */
 enum GroveGesture {
-    //% block=None
-    Aucun = 0,
-    //% block=Right
-    Droite = 1,
-    //% block=Left
-    Gauche = 2,
-    //% block=Up
-    Haut = 3,
-    //% block=Down
-    Bas = 4,
-    //% block=Forward
-    Vers_l_avant = 5,
-    //% block=Backward
-    Vers_l_arriere = 6,
-    //% block=Clockwise
-    Sens_horaire = 7,
-    //% block=Anticlockwise
-    Sens_anti_horaire = 8,
-    //% block=Wave
-    Vague = 9
+     //% block=Aucun
+    None = 0,
+    //% block=Droite
+    Right = 1,
+    //% block=Gauche
+    Left = 2,
+    //% block=Haut
+    Up = 3,
+    //% block=Bas
+    Down = 4,
+    //% block=Vers_l_avant
+    Forward = 5,
+    //% block=Vers_l_arriere
+    Backward = 6,
+    //% block=Sens_horaire
+    Clockwise = 7,
+    //% block=Sens_anti_horaire
+    Anticlockwise = 8,
+    //% block=vague
+    Wave = 9
 }
 
 /**
