@@ -40,31 +40,31 @@ let TubeTab: number [] = [
  */
 enum GroveGesture {
     //% block=None
-    None = 0,
+    Aucun = 0,
     //% block=Right
-    Right = 1,
+    Droite = 1,
     //% block=Left
-    Left = 2,
+    Gauche = 2,
     //% block=Up
-    Up = 3,
+    Haut = 3,
     //% block=Down
-    Down = 4,
+    Bas = 4,
     //% block=Forward
-    Forward = 5,
+    Vers_l_avant = 5,
     //% block=Backward
-    Backward = 6,
+    Vers_l_arriere = 6,
     //% block=Clockwise
-    Clockwise = 7,
+    Sens_horaire = 7,
     //% block=Anticlockwise
-    Anticlockwise = 8,
+    Sens_anti_horaire = 8,
     //% block=Wave
-    Wave = 9
+    Vague = 9
 }
 
 /**
  * Functions to operate Grove module.
  */
-//% weight=10 color=#9F79EE icon="\uf108" block="Grove"
+//% weight=10 color=#9F79EE icon="\uf108" block="Profdetech_grove"
 namespace profdetech_grove {
     const gestureEventId = 3100;
     let lastGesture = GroveGesture.None;
@@ -152,7 +152,7 @@ namespace profdetech_grove {
      * @param clkPin value of clk pin number
      * @param dataPin value of data pin number
      */
-    //% blockId=grove_tm1637_create block="4-Digit Display at|%clkPin|and|%dataPin"
+    //% blockId=grove_tm1637_create block="Initialisation de l'afficheur 4-Digits sur le port|%clkPin|ets|%dataPin"
     export function createDisplay(clkPin: DigitalPin, dataPin: DigitalPin): TM1637
     {
         let display = new TM1637();
@@ -215,7 +215,7 @@ namespace profdetech_grove {
         /**
          * Create a new driver of Grove - Gesture
          */
-        //% blockId=grove_gesture_init block="%strip|initiate the Grove - Gesture"
+        //% blockId=grove_gesture_init block="%strip|initialisation du capteur de geste"
         //% advanced=true
         init() {
             this.paj7620Init();
@@ -225,7 +225,7 @@ namespace profdetech_grove {
         /**
          * Detect and recognize the gestures from Grove - Gesture
          */
-        //% blockId=grove_gesture_read block="%strip|get gesture"
+        //% blockId=grove_gesture_read block="%strip|get geste"
         //% advanced=true
         read(): number {
             let data = 0, result = 0;
@@ -409,7 +409,7 @@ namespace profdetech_grove {
          * @param dispData value of number
          * @param bitAddr value of bit number
          */
-        //% blockId=grove_tm1637_display_bit block="%strip|show single number|%dispData|at digit|%bitAddr"
+        //% blockId=grove_tm1637_display_bit block="%strip|afficher le nombre unique|%dispData|a la position|%bitAddr"
         //% dispData.min=0 dispData.max=9
         //% bitAddr.min=0 bitAddr.max=3
         //% advanced=true
@@ -454,7 +454,7 @@ namespace profdetech_grove {
         /**
          * Clear the display
          */
-        //% blockId=grove_tm1637_display_clear block="%strip|clear"
+        //% blockId=grove_tm1637_display_clear block="%strip|effacé l'afficheur 4-digits"
         //% advanced=true
         clear()
         {
