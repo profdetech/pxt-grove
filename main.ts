@@ -75,7 +75,7 @@ namespace profdetech_grove {
      * @param gesture type of gesture to detect
      * @param handler code to run
      */
-    //% blockId=grove_gesture_create_event block="Lorsque le geste|%gesture est effectué"
+    //% blockId=grove_gesture_create_event block="Lorsque le geste|%gesture| est effectué"
     export function onGesture(gesture: GroveGesture, handler: () => void) {
         control.onEvent(gestureEventId, gesture, handler);
         if (!paj7620) {
@@ -152,7 +152,7 @@ namespace profdetech_grove {
      * @param clkPin value of clk pin number
      * @param dataPin value of data pin number
      */
-    //% blockId=grove_tm1637_create block="Initialisation de l'afficheur 4-Digits sur le port|%clkPin|ets|%dataPin"
+    //% blockId=grove_tm1637_create block="Initialisation afficheur 4-Digits sur le port|%clkPin|et|%dataPin"
     export function createDisplay(clkPin: DigitalPin, dataPin: DigitalPin): TM1637
     {
         let display = new TM1637();
