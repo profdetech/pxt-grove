@@ -125,6 +125,7 @@ namespace profdetech_grove {
      * @param pin signal pin of ultrasonic ranger module
      */
     //% blockId=grove_ultrasonic_inches block="Ultrasonic Sensor (in inch) at|%pin"
+	//% advanced=true
     export function measureInInches(pin: DigitalPin): number
     {
         let duration = 0;
@@ -454,7 +455,7 @@ namespace profdetech_grove {
         /**
          * Clear the display
          */
-        //% blockId=grove_tm1637_display_clear block="%strip|effacé l'afficheur 4-digits"
+        //% blockId=grove_tm1637_display_clear block="%strip|effacer l'afficheur 4-digits"
         //% advanced=true
         clear()
         {
