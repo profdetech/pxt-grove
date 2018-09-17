@@ -336,7 +336,7 @@ namespace profdetech_grove {
          * Show a 4 digits number on display
          * @param dispData value of number
          */
-        //% blockId=grove_tm1637_display_number block="%strip|show number|%dispData"
+        //% blockId=grove_tm1637_display_number block="%strip|Afficher le nombre|%dispData"
         show(dispData: number)
         {       
             if(dispData < 10)
@@ -393,7 +393,7 @@ namespace profdetech_grove {
          * Set the brightness level of display at from 0 to 7
          * @param level value of brightness level
          */
-        //% blockId=grove_tm1637_set_display_level block="%strip|brightness level to|%level"
+        //% blockId=grove_tm1637_set_display_level block="%strip|Régler la luminosité à |%level"
         //% level.min=0 level.max=7
         set(level: number)
         {
